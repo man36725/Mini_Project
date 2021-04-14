@@ -1,5 +1,5 @@
 # SDLC Activity Based Learning
-![Flames](https://github.com/man36725/Mini_Project/blob/main/1_Requirements/flames.jpeg)
+![Flames](                  https://github.com/man36725/Mini_Project/blob/main/1_Requirements/flames.jpeg            )
 
 Visit [Pages for Report -optional](using github.io option)
 
