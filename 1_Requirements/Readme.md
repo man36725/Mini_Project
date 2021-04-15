@@ -17,18 +17,12 @@ there are many systems existing in online those will work through internet but t
 ## Defining Our System
 ### Certain assumptions:
 * Few systems already exists with which our system will interact
-    * Hospital Management Application
-    * Analytics System
-    * Emergency Services
+    * Works in online
+    * works for small names
 ![Description](https://github.com/arc-arnob/LnT_Mini_Project/blob/main/1_Requirements/system.png)
 ### Explanation:
-* Patient Management Application have few inbuilt features like:
-    * Create a patient record
-    * Delete a patient record
-    * Read a patient record
-    * Update a patient record
-    * Save record to file
-    * Read record from file 
+* user enters the name of him and his partner then application will return the relation exist between them 
+* Note: it's just a game the results are not accurate
 
 * Since we have assumed that few systems already exists we can say that in future sprints new features could be added in which for instance patient record from PMS can be sent to HMS or Analytics or even to emegency services if some patient record shows abnormal pattern.
 
@@ -38,19 +32,17 @@ there are many systems existing in online those will work through internet but t
 # 4W&#39;s and 1&#39;H
 
 ## Who:
-* Small and medium size clinics Providing Covid vaccinations to patients
+* Small and medium sized clients shows interest in it
 
 ## What:
-* Many Clinics are not able to afford high end HMS or ERP systems and hence still depend on manual filing systems. During COVID vaccinations it becomes a tedious task to manage every patient with hand written file system
-
+* Many Clinics are not able to afford high end HMS or ERP systems and hence still depend on manual calculation playing. to make it easy and simple 
 ## When:
-* This problem began in February 2021, when COVID Vaccination Drive began and small/medium clinics will soon have to administer vaccinations to people.
-
+* This problem began in February 2021, when COVID Vaccination Drive began and small/medium clinics will soon have to administer vaccinations to people.z
 ## Where:
 * This problem is expected to surface in all states of India.
 
 ## How:
-* This problem may cause ineffective vaccine management and hence there can be a huge amount of vaccine wastage. As per recent data in cities like Noida and Delhi till date 9%-18% vaccines have gone to waste.
+* As it is a Game if you play manually it take's a amount of time. it is a fun game mostly played by kids 
 
 # Detail requirements
 ## High Level Requirements: 
