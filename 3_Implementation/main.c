@@ -1,4 +1,6 @@
+#include<stdio.h>
 #include "flames_calculator.h"
+void flame_calculator(char* y, char* p);
 int main()
 {
 	char y[20];
@@ -8,9 +10,9 @@ int main()
 	scanf("%s",y);
 	printf("Enter Your Partner name:");
 	scanf("%s",p);
-	printf("Fetching results.............");
+	printf("Fetching results.............\n");
 	printf("You and Your partner are....");
-	flames_calculator(y,p);
+	flame_calculator(y,p);
 	
 	
 }
