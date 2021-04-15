@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 #include "flames_calculator.h"
 void flame_calculator(char* y, char* p);
 int main()
