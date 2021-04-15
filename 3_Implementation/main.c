@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "flames_calculator.h"
-void flame_calculator(char* y, char* p);
+int flame_calculator(char* y, char* p);
 int main()
 {
 	char y[20];
