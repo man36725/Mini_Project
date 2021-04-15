@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-#include "unity/unity.h"
-#include "unity/unity_internals.h"
+#include "unity.h"
+#include "unity_internals.h"
 #include "flames_calculator.h"
 
 void setUp(){}
