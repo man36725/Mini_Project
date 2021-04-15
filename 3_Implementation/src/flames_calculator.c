@@ -39,7 +39,7 @@ error_t flame_calculator(char* y, char* p)
 		if(ch==3||ch==5||ch==14||ch==16||ch==18||ch==21||ch==23)
 			printf("%s is Friend to %s\n",y,p);
 		else if(ch==10||ch==19)
-			printf("Lover\n",y,p);
+			printf("Lover\n");
 		else if(ch==8||ch==12||ch==13||ch==17||ch==28)
 			printf("%s Has Attraction on %s\n",y,p);
 		else if(ch==6||ch==11||ch==15||ch==26)
