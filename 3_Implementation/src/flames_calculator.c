@@ -4,7 +4,7 @@
 #include"unity_internals.h"
 #include"flames_calculator.h"
 
-error_t flame_calculator(char* y, char* p)
+int flame_calculator(char* y, char* p)
 {
 	int a,b,c=0,l=0,i,j,k,ch,u,po;
 	if(y==0 || p==0){                             //Check Null Value
