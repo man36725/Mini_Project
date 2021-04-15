@@ -1,5 +1,5 @@
 # Name of the project
-PROJECT_NAME = Flames
+PROJECT_NAME = Flame
 
 # Output directory
 BUILD = build
