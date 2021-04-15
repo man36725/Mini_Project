@@ -1,50 +1,65 @@
-PROJ_NAME = vaccine_proj
-TEST_PROJ_NAME = Test_$(PROJ_NAME)
+# Name of the project
+PROJECT_NAME = Flames
 
-SRC =src/create_ll.c \
-src/display_ll.c \
-src/insert_end.c \
-src/find_by_id.c \
-src/update_record.c \
-src/indexFile.c \
-src/validate_id.c \
-src/openFile.c \
-src/saveFile.c \
-src/readFile.c \
-src/loadData.c \
-src/update_data_file.c
+# Output directory
+BUILD = build
 
-TEST_SRC = test/test.c \
-unity/unity.c 
-INC_H = inc
-INC_T = unity
+# All source code files
+SRC = main.c\
+src/flames_calculator.c
 
-ifdef OS
-   EXEC = exe
-else
-   ifeq ($(shell uname), Linux)
-	  EXEC = out
-   endif
-endif
+# All test source files
+TEST_SRC = src/flames_calculator.c\
+test/test_flames.c\
+unity/unity.c\
 
-all:
-	gcc -I $(INC_H) $(SRC) main.c -o $(PROJ_NAME).$(EXEC)
-	
-run:
-	$(PROJ_NAME).$(EXEC)
-test:
-	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(TEST_PROJ_NAME).$(EXEC)
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
-cppcheck:
-	cppcheck --enable=all $(SRC)
-debug:
-	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJ_NAME).$(EXEC)
-	gdb $(PROJ_NAME).$(EXEC)
+# All include folders with header files
+INC	= -Iinc\
+-Iunity\
 
-valgrind:
-	valgrind ./$(PROJ_NAME).$(EXEC)
+#Library Inlcudes
+#if working with CUnit 
+#INCLUDE_LIBS = -lcunit
+INCLUDE_LIBS =
 
+# Project Output name
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
+# Document files
+DOCUMENTATION_OUTPUT = documentation/html
+
+# Default target built
+$(PROJECT_NAME):all
+
+# Run the target even if the matching name exists
+.PHONY: run clean test doc all
+
+all: $(SRC) $(BUILD)
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+
+# Call `make run` to run the application
+run:$(PROJECT_NAME)
+	./$(PROJECT_OUTPUT).out
+
+# Document the code using Doxygen
+#doc:
+#	make -C ./documentation
+
+# Build and run the unit tests
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
+#Coverage
+coverageCheck:$(BUILD)
+	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
+
+# Remove all the built files, invoke by `make clean`
 clean:
-	del *.DAT
-	del *.$(EXEC)
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+
+# Create new build folder if not present
+$(BUILD):
+	mkdir build
