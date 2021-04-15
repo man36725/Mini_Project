@@ -10,9 +10,9 @@ void tearDown(){}
 
 void test_sum(void){
 	char y[20] = "Maneesh";
-	char p[20] = "Chaitanya";
-	TEST_ASSERT_EQUAL(SUCCESS,flame_calculator(y,p));
-    TEST_ASSERT_EQUAL(ERROR,flame_calculator(0,0));
+	char p[20] = "lanka";
+	TEST_ASSERT_EQUAL(1,flame_calculator(y,p));
+    TEST_ASSERT_EQUAL(0,flame_calculator(0,0));
 }
 
 
