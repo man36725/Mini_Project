@@ -4,15 +4,9 @@
 #include"unity_internals.h"
 #include"flames_calculator.h"
 
-int flame_calculator(char* y, char* p)
+int flame_calculator(int a,int b,char* y, char* p)
 {
-	int a,b,c=0,l=0,i,j,k,ch,u,po;
-	if(y==0 || p==0){                             //Check Null Value
-        printf("Error\n");
-        return 0;
-    }
-	a=strlen(y);
-	b=strlen(p);
+	int c=0,l=0,i,j,k,ch,u,po;
 	a=a+b;
 		for(i=0;i<b;i++)
 		{
@@ -56,5 +50,4 @@ int flame_calculator(char* y, char* p)
 			main();
 		else 
 			printf("\n\nThank You\n\n");*/
-		return 1;
 }	
