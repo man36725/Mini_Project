@@ -25,5 +25,6 @@ typedef enum error_t {
 }error_t;
 
 
-int flame_calculator(char* y, char* p);
+int flame_calculator(int a,int b,char* y, char* p);
+int strlength(char* y, char* p);
 #endif 
