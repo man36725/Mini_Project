@@ -6,12 +6,10 @@ BUILD = build
 
 # All source code files
 SRC = main.c\
-src/flames_calculator.c\
-src/strlength.c
+src/flames_calculator.c
 
 # All test source files
 TEST_SRC = src/flames_calculator.c\
-src/strlength.c\
 test/test_flames.c\
 unity/unity.c\
 
