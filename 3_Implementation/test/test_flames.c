@@ -1,21 +1,24 @@
+
 #include <stdio.h>
 #include <string.h>
-#include "unity.h"
-#include "unity_internals.h"
 #include "flames_calculator.h"
-
+#include "unity/unity.h"
+#include "unity/unity_internals.h"
+/* Required by the unity test framework */
 void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
-
-void test_sum(void){
-	char y[20] = "Maneesh";
-	char p[20] = "lanka";
-	TEST_ASSERT_EQUAL(1,flame_calculator(y,p));
-    TEST_ASSERT_EQUAL(0,flame_calculator(0,0));
+void test_div(void)
+{
+  char y[20] = "Maneesh";
+  char p[20] = "Chaitanya";	
+  TEST_ASSERT_EQUAL(1, strlenght(y,p));
+  TEST_ASSERT_EQUAL(0, 	strlenght(NULL,NULL));
+  char y[20]="nani";
+  char p[20]="vani";
+  TEST_ASSERT_EQUAL(1, flame_calculator(4,4,y,p));
+  //TEST_ASSERT_EQUAL(0, div(10, 0));
 }
-
-
 
 int main()
 {
@@ -24,16 +27,12 @@ int main()
 	printf("Enter your name:: ");
 	scanf("%s",y);
 	printf("Enter your Partner name:: ");
-	scanf("%s",p);*/
-	//flame_calculator(y,p);
+	scanf("%s",p);
+	flame_calculator(y,p);*/
 	UNITY_BEGIN();
-
-/* Run Test functions */
-  
-  RUN_TEST(test_sum);
-
-
+	
+	RUN_TEST(test_div);
+ 
   /* Close the Unity Test Framework */
-  return UNITY_END();
-
+  	return UNITY_END(); 
 }
