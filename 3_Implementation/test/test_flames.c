@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "flames_calculator.h"
-#include "unity/unity.h"
-#include "unity/unity_internals.h"
+#include "unity.h"
+#include "unity_internals.h"
 /* Required by the unity test framework */
 void setUp(){}
 /* Required by the unity test framework */
