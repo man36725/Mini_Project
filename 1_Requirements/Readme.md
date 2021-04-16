@@ -58,6 +58,6 @@ S= Siblings
 | ID | Description | HLR ID | Status (Implemented/Future) |
 | ------ | --------- | ------ | ----- |
 | LR01 | Successfully passing the names of participants to the 'flames' function | HR01 | TBD-S1 |
-| LR02 | Reading patient data should be possible in 2 ways, first being by searching by id of a patient and second by printing all the records available | HR02 | TBD-S1 |
-| LR03 | While reading all the records, only 10 records per page should be visible and should add 10 more if user wants to see more | HR02 | FUTURE |
+| LR02 | Checking the total lengths of both the strings  | HR02 | TBD-S1 |
+| LR03 | While displaying the relation it also display's the figure of the relation | HR02 | FUTURE |
 
