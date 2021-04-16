@@ -10,24 +10,26 @@ The main aim of the flames calculator is to make easy to play the game. If any o
 there are many systems existing in online those will work through internet but this system will work in even offline
 
 ## Cost and Features with Time 
-| Time | Feature | Cost |
-| ----- | ----- | ----- |
-| 10
+Costs related to this system are the cost towards resources to be used to implement the project.Apart from this manpower cost could be included. Features could be inferred from the research section since there are slight differences among the types of systems.
 
 ## Defining Our System
-### Certain assumptions:
-* Few systems already exists with which our system will interact
-    * Works in online
-    * works for small names
-![Description](https://github.com/arc-arnob/LnT_Mini_Project/blob/main/1_Requirements/system.png)
+Here my system is a simple FLAMES games which analyses the given names and finds the relationships among the given partner. These Relationships are
+
+F= Friendship
+L= Love
+A= Affection
+M= Marriage
+E= Enemies
+S= Siblings
+
+![Description](https://github.com/man36725/Mini_Project/blob/main/1_Requirements/fl.jpg)
 ### Explanation:
 * user enters the name of him and his partner then application will return the relation exist between them 
 * Note: it's just a game the results are not accurate
 
-* Since we have assumed that few systems already exists we can say that in future sprints new features could be added in which for instance patient record from PMS can be sent to HMS or Analytics or even to emegency services if some patient record shows abnormal pattern.
 
 ## SWOT ANALYSIS
-![SWOT Analysis](https://github.com/arc-arnob/LnT_Mini_Project/blob/main/1_Requirements/swot.png)
+![SWOT Analysis](https://github.com/man36725/Mini_Project/blob/main/1_Requirements/swot.PNG)
 
 # 4W&#39;s and 1&#39;H
 
@@ -37,9 +39,9 @@ there are many systems existing in online those will work through internet but t
 ## What:
 * Many Clinics are not able to afford high end HMS or ERP systems and hence still depend on manual calculation playing. to make it easy and simple 
 ## When:
-* This problem began in February 2021, when COVID Vaccination Drive began and small/medium clinics will soon have to administer vaccinations to people.z
+* Can be used at any time ,whenever an urge develops to find out the future about their relationships.
 ## Where:
-* This problem is expected to surface in all states of India.
+* Anyone can use it, anywhere in the world.
 
 ## How:
 * As it is a Game if you play manually it take's a amount of time. it is a fun game mostly played by kids 
@@ -48,24 +50,14 @@ there are many systems existing in online those will work through internet but t
 ## High Level Requirements: 
 | ID | Description | Category | Status | 
 | ----- | ----- | ------- | ---------|
-| HR01 | User shall be able to add new patient record | Techincal | TBD-S1 | 
-| HR02 | User shall be able to read a patient record | Techincal | TBD-S1 |
-| HR03 | User shall be able to update a patient record | Techincal | TBD-S1 |
-| HR04 | User shall be able to delete a patient record | Techincal | TBD-S1 |
-| HR05 | User shall be able to save records in a file | Techincal | TBD-S1 |
-| HR06 | User shall be able to read data from a file | Techincal | TBD-S1 |
-| HR07 | Data should not be lost in case of faliure | Scenario | FUTURE |
-| HR08 | Data should always be stored when closing the system | Scenario | TBD-S1 |
+| HR01 | User be able to check relationship with their partner | Techincal | TBD-S1 | 
+| HR02 | User shall be able to Enter their names | Techincal | TBD-S1 |
+
 ##  Low level Requirements:
  
 | ID | Description | HLR ID | Status (Implemented/Future) |
 | ------ | --------- | ------ | ----- |
-| LR01 | New record shall be added by providing all the asked information and the id should be unique or else patient record should not be accepted. | HR01 | TBD-S1 |
+| LR01 | Successfully passing the names of participants to the 'flames' function | HR01 | TBD-S1 |
 | LR02 | Reading patient data should be possible in 2 ways, first being by searching by id of a patient and second by printing all the records available | HR02 | TBD-S1 |
 | LR03 | While reading all the records, only 10 records per page should be visible and should add 10 more if user wants to see more | HR02 | FUTURE |
-| LR04 | If user searches for an invalid ID "No Record Found" message should be displayed | HR02 | TBD-S1 |
-| LR05 | User need to search by id for the pateint record to be updated, if no such record is available then "No Record Found" Message should be displayed | HR03 | TBD-S1 |
-| LR06 | User need to search by id for the pateint record to be deleted, if no such record is available then "No Record Found" Message should be displayed | HR04 | TBD-S1 |
-| LR05 | User shall be able to save the files, if file already exists then it should append to file and should not overwrite it and if file does not exists then it should create a new file | HR05 | TBD-S1 |
-| LR06 | If opening the file fails, then the system shloud prompt the message "Unable to access file" and should not end the program execution | HR05, HR06, HR07, HR08 | TBD-S1 |
-| LR07 | When user Log off the system, message shall be prompted asking the user to save new records to file before exiting or not | HR08 | TBD-S1 |
+
