@@ -20,7 +20,7 @@ Folder             | Description
 
 SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`265039` | Lanka Maneesh Kumar  | Feature A, B etc    | X No     | X No   |X No   |X No     
+`265039` | Lanka Maneesh Kumar  | All feature implemented   | No     | No   | 2   | 2     
    
 
 | Feature Id | Feature |
